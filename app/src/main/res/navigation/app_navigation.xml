@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/loginScreen">
+
+    <fragment
+        android:id="@+id/loginScreen"
+        android:name="com.parita.shoestore.view.LoginScreen"
+        android:label="fragment_login_screen"
+        tools:layout="@layout/fragment_login_screen">
+        <action
+            android:id="@+id/action_loginScreen_to_welcomeScreen"
+            app:destination="@id/welcomeScreen"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/loginScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoeListScreen"
+        android:name="com.parita.shoestore.view.ShoeListScreen"
+        android:label="fragment_shoe_list_screen"
+        tools:layout="@layout/fragment_shoe_list_screen">
+        <action
+            android:id="@+id/action_shoeListScreen_to_shoeDetailsScreen"
+            app:destination="@id/shoeDetailsScreen"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_shoeListScreen_to_loginScreen"
+            app:destination="@id/loginScreen"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/welcomeScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_shoeListScreen_to_instructionScreen"
+            app:destination="@id/instructionScreen"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeScreen"
+        android:name="com.parita.shoestore.view.WelcomeScreen"
+        android:label="WelcomeScreen">
+        <action
+            android:id="@+id/action_welcomeScreen_to_instructionScreen"
+            app:destination="@id/instructionScreen"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/loginScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/instructionScreen"
+        android:name="com.parita.shoestore.view.InstructionScreen"
+        android:label="InstructionScreen">
+        <action
+            android:id="@+id/action_instructionScreen_to_shoeListScreen"
+            app:destination="@id/shoeListScreen"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/loginScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoeDetailsScreen"
+        android:name="com.parita.shoestore.view.ShoeDetailsScreen"
+        android:label="fragment_shoe_details_screen"
+        tools:layout="@layout/fragment_shoe_details_screen">
+        <action
+            android:id="@+id/action_shoeDetailsScreen_to_shoeListScreen"
+            app:destination="@id/shoeListScreen"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/shoeListScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

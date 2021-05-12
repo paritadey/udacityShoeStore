@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <string name="let_s_shoe">Shoe Store</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="instruction_one">This is an application for displaying different styles of shoes present in the Shoe Store.</string>
+    <string name="instruction_two">Please click on the below button to move forward and explore the store !!!</string>
+    <string name="go">Go</string>
+    <string name="instruction_three">Welcome to Shoe Store.</string>
+    <string name="instruction_four">This is a demo application of Shoe Store.\n
+        This is a course work under udacity android nanodegree\n
+        User can add the details of the shoe and on adding data it will be store in Room Database
+        If the database is empty then it means no data saved in the database.
+        On clicking of the Add floating action button, the screen will be redirected to the next screen \n
+        where user can fill the details of the shoe and save it. If user wants to cancel the operation then simply
+        press the Cancel button and it will redirect to the previous screen. If the user saves any data then those data
+        will be displayed as list view.
+        User can either login and then enter into the app or just hit Welcome Screen button and enter inside the app.
+        </string>
+    <string name="next">Next</string>
+    <string name="email_hint">Enter email address</string>
+    <string name="password_hint">Enter Password</string>
+    <string name="login_desc">Forget the hassle, shoes are at your fingertip.</string>
+    <string name="login_into_app">Login into app</string>
+    <string name="welcome_screen">Welcome Screen</string>
+    <string name="screen_details_instruction">Please enter the details about the shoe for Shoe Store</string>
+    <string name="shoe_company">Enter Shoe Company</string>
+    <string name="show_size">Enter Show size</string>
+    <string name="description">Description</string>
+    <string name="shoe_name">Enter Shoe Name</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="shoe_id">Enter Shoe ID</string>
+    <string name="shoe_store">Shoe Store</string>
+</resources>
