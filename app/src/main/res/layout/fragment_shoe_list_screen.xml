@@ -32,7 +32,7 @@
             android:layout_marginBottom="@dimen/twenty_four_dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:pressedTranslationZ="12dp"
+            app:pressedTranslationZ="@dimen/twelve_dp"
             app:srcCompat="@drawable/ic_add" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
